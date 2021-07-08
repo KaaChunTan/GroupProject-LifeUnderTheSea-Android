@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+    <Button
+        android:id="@+id/quiz_list3"
+        android:layout_width="348dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/round_corner_lock_quiz"
+        android:fontFamily="@font/smart_kid"
+        android:text="quiz 3"
+        android:textColor="#808080"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/quiz_list2"
+        android:layout_width="348dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/round_corner_lock_quiz"
+        android:fontFamily="@font/smart_kid"
+        android:text="quiz 2"
+        android:textColor="#808080"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/quiz_list1"
+        android:layout_width="348dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="346dp"
+        android:background="@drawable/round_corner_quiz_list"
+        android:fontFamily="@font/smart_kid"
+        android:text="quiz 1"
+        android:textSize="30dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_marginTop="595dp"
+        android:background="?android:attr/windowBackground"
+        app:itemHorizontalTranslationEnabled="true"
+        app:labelVisibilityMode="auto"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="359dp"
+        android:layout_height="227dp"
+        android:layout_alignEnd="@+id/quiz_list2"
+        android:layout_alignRight="@+id/quiz_list2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-31dp"
+        android:layout_marginRight="-31dp"
+        android:background="@drawable/quiz_background"
+        android:fontFamily="@font/smart_kid"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="38dp" />
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:fontFamily="@font/smart_kid"
+        android:gravity="center"
+        android:text="Test Your Knowledge!"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/funfact_background"
+    tools:context=".ResultActivity">
+
+    <!-- add ImageView to display the captured image-->
+
+    <TextView
+        android:id="@+id/result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/smart_kid"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_description2"
+        android:layout_width="315dp"
+        android:layout_height="98dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="176dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/border_funfact"
+        android:fontFamily="@font/smart_kid"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_marginTop="595dp"
+        android:background="?android:attr/windowBackground"
+        app:itemHorizontalTranslationEnabled="true"
+        app:labelVisibilityMode="auto"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/info_btn"
+        android:layout_width="39dp"
+        android:layout_height="41dp"
+        android:layout_alignEnd="@+id/textView_description2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/search"
+        android:clickable="false" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="251dp"
+        android:layout_height="241dp"
+        android:layout_below="@+id/result_title"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp" />
+
+    <Button
+        android:id="@+id/img_btn"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_alignStart="@+id/textView_description2"
+        android:layout_alignBottom="@+id/info_btn"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/camera"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>
